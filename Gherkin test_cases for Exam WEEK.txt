@@ -1,7 +1,6 @@
 Feature: Testing the login and shopping functionality of SauceDemo
   As a user of the SauceDemo online store
-  I want to be able to log in, shop, and log out
-  So that I can use all the site's features
+  Want to be able to login, shop, and logout
 
   Scenario: Successful login with valid credentials
     Given User navigates to  login page by opening browser
@@ -23,4 +22,5 @@ Feature: Testing the login and shopping functionality of SauceDemo
     Given  User successfully logged into the web page
     When   User add item to the cart
     Then   User should be successfully added a item to the cart
+
    
