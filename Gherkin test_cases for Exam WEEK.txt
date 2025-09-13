@@ -1,0 +1,26 @@
+Feature: Testing the login and shopping functionality of SauceDemo
+  As a user of the SauceDemo online store
+  I want to be able to log in, shop, and log out
+  So that I can use all the site's features
+
+  Scenario: Successful login with valid credentials
+    Given User navigates to  login page by opening browser
+    When  User login with valid credentials
+    Then  User should be redirected to the products page
+
+  Scenario: Unsuccessful login with an invalid password
+    Given User navigates to  login page by opening browser
+    When  User login with invalid credentials
+    Then  User should be unsuccessful logged into the web page
+    
+
+  Scenario: Successful logout from the profile
+    Given User successfully logged into the web page
+    When  User logout into the web page
+    Then  User should be redirected back to the login page
+
+  Scenario: Adding a item to the cart
+    Given  User successfully logged into the web page
+    When   User add item to the cart
+    Then   User should be successfully added a item to the cart
+   
